@@ -246,7 +246,12 @@ namespace SalonManagementSystem
                     else if (button.Text == "Add Supplier")
                     {
                         showAddSupplier(center);
-                    };
+                    }
+                    else if (button.Text == "Product Details")
+                    {
+                        showProductDetails(center);
+                    }
+  ;
 
                 };
                 center.DropdownPanel.Controls.Add(button);
@@ -295,6 +300,17 @@ namespace SalonManagementSystem
             center.OuterTablePanel.Controls.Add(employeesUC, 0, 1);
 
         }
+        private void showProductDetails(center_uc center)
+        {
+            RemoveAllControlsFromOuterPanel(center.OuterTablePanel);
+
+            // Create and add employees_uc to the first row of outer_panel
+            editProduct employeesUC = new editProduct();
+            employeesUC.Dock = DockStyle.Fill;
+            center.OuterTablePanel.Controls.Add(employeesUC, 0, 1);
+
+        }
+       
 
         private void products_btn_Click_1(object sender, EventArgs e)
         {
@@ -305,7 +321,7 @@ namespace SalonManagementSystem
 
             main_tablepanel.Controls.Add(center);
 
-            addButtonsForProduct(center, "Add Product Type", "Add Company", "Add Supplier", "Add Product");
+            addButtonsForProduct(center, "Discard Product", "Product Details", "Add Product Type", "Add Company", "Add Supplier", "Add Product");
 
 
 
