@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbConfiguration\Configuration.cs" />
+    <Compile Include="UI\Action.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Action.Designer.cs">
+      <DependentUpon>Action.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\addCompany.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     </Compile>
     <Compile Include="UI\addSupplier.Designer.cs">
       <DependentUpon>addSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\editProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\editProduct.Designer.cs">
+      <DependentUpon>editProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
@@ -127,17 +139,35 @@
     <Compile Include="UI\notifications_uc.Designer.cs">
       <DependentUpon>notifications_uc.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\orderProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\orderProduct.Designer.cs">
+      <DependentUpon>orderProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\popupForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\popupForm.Designer.cs">
       <DependentUpon>popupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\retrunProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\retrunProduct.Designer.cs">
+      <DependentUpon>retrunProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\services_uc.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\services_uc.Designer.cs">
       <DependentUpon>services_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\updateEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\updateEmp.Designer.cs">
+      <DependentUpon>updateEmp.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\viewCustomerType_uc.cs">
       <SubType>UserControl</SubType>
@@ -151,6 +181,9 @@
     <Compile Include="UI\viewCustomer_uc.Designer.cs">
       <DependentUpon>viewCustomer_uc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Action.resx">
+      <DependentUpon>Action.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\addcustomerType_uc.resx">
       <DependentUpon>addcustomerType_uc.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\addSupplier.resx">
       <DependentUpon>addSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\editProduct.resx">
+      <DependentUpon>editProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -190,11 +226,20 @@
     <EmbeddedResource Include="UI\notifications_uc.resx">
       <DependentUpon>notifications_uc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\orderProduct.resx">
+      <DependentUpon>orderProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\popupForm.resx">
       <DependentUpon>popupForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\retrunProduct.resx">
+      <DependentUpon>retrunProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\services_uc.resx">
       <DependentUpon>services_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\updateEmp.resx">
+      <DependentUpon>updateEmp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\viewCustomerType_uc.resx">
       <DependentUpon>viewCustomerType_uc.cs</DependentUpon>
