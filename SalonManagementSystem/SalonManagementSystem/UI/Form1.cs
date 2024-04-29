@@ -108,7 +108,20 @@ namespace SalonManagementSystem
                     else if (button.Text == "Add Customer")
                     {
                         ShowAddCustomerPage(center);
-                    };
+                    }
+                    else if (button.Text == "View Customers")
+                    {
+                        ShowViewCustomerPage(center);
+                    }
+                    else if (button.Text == "Add Customer Type")
+                    {
+                        ShowAddCustomerTypePage(center);
+                    }
+                    else if (button.Text == "View Customer Types")
+                    {
+                        ShowViewCustomerTypePage(center);
+                    }
+                    ;
 
                 };
                  center.DropdownPanel.Controls.Add(button);
@@ -143,7 +156,33 @@ namespace SalonManagementSystem
             addCustomerUC.Dock = DockStyle.Fill;
             center.OuterTablePanel.Controls.Add(addCustomerUC, 0, 1);
         }
+        private void ShowViewCustomerPage(center_uc center)
+        {
+            RemoveAllControlsFromOuterPanel(center.OuterTablePanel);
 
+            // Create and add addCustomer_uc to the first row of outer_panel
+            viewCustomer_uc vc = new viewCustomer_uc();
+            vc.Dock = DockStyle.Fill;
+            center.OuterTablePanel.Controls.Add(vc, 0, 1);
+        }
+        private void ShowAddCustomerTypePage(center_uc center)
+        {
+            RemoveAllControlsFromOuterPanel(center.OuterTablePanel);
+
+            // Create and add addCustomer_uc to the first row of outer_panel
+            addcustomerType_uc addcustomerType_Uc = new addcustomerType_uc();
+            addcustomerType_Uc.Dock = DockStyle.Fill;
+            center.OuterTablePanel.Controls.Add(addcustomerType_Uc, 0, 1);
+        }
+        private void ShowViewCustomerTypePage(center_uc center)
+        {
+            RemoveAllControlsFromOuterPanel(center.OuterTablePanel);
+
+            // Create and add addCustomer_uc to the first row of outer_panel
+            viewCustomerType_uc vc = new viewCustomerType_uc();
+            vc.Dock = DockStyle.Fill;
+            center.OuterTablePanel.Controls.Add(vc, 0, 1);
+        }
         private void notifications_btn_Click(object sender, EventArgs e)
         {
             RemoveAllControlsFromOuterPanel(main_tablepanel);
