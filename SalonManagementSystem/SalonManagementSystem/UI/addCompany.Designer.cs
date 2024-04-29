@@ -120,23 +120,25 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.guna2Button1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.name, 0, 0);
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.67241F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.99138F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.12069F));
+            this.tableLayoutPanel2.Controls.Add(this.name, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.guna2Button1, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 191);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.46053F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.53947F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.65217F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.34783F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(464, 276);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // guna2Button1
             // 
-            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Button1.BorderRadius = 10;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -145,9 +147,9 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(35)))), ((int)(((byte)(76)))));
             this.guna2Button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
             this.guna2Button1.ForeColor = System.Drawing.Color.BlanchedAlmond;
-            this.guna2Button1.Location = new System.Drawing.Point(256, 206);
+            this.guna2Button1.Location = new System.Drawing.Point(126, 167);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(205, 44);
+            this.guna2Button1.Size = new System.Drawing.Size(194, 67);
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Add";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -163,17 +165,17 @@
             this.name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(35)))), ((int)(((byte)(76)))));
-            this.name.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.name.ForeColor = System.Drawing.Color.Black;
             this.name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(35)))), ((int)(((byte)(76)))));
-            this.name.Location = new System.Drawing.Point(25, 35);
+            this.name.Location = new System.Drawing.Point(107, 35);
             this.name.Margin = new System.Windows.Forms.Padding(25, 35, 25, 35);
             this.name.Name = "name";
             this.name.PasswordChar = '\0';
             this.name.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.name.PlaceholderText = "Name";
             this.name.SelectedText = "";
-            this.name.Size = new System.Drawing.Size(414, 110);
+            this.name.Size = new System.Drawing.Size(233, 55);
             this.name.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.name.TabIndex = 1;
             this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
