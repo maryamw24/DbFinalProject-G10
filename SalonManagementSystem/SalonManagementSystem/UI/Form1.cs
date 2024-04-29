@@ -33,10 +33,40 @@ namespace SalonManagementSystem
         private void customers_btn_Click(object sender, EventArgs e)
         {
             center_uc center = addCentre_uc();
-            AddButtonsToDropdownPanel(center, "View Customer Types",  "Add Customer Type", "View Customers", "Add Customer");
+            AddButtonsToDropdownPanel(center, "View Customer Types", "Add Customer Type", "View Customers", "Add Customer");
+        }
+        private void notifications_btn_Click(object sender, EventArgs e)
+        {
+            RemoveAllControlsFromOuterPanel(main_tablepanel);
+            notifications_uc notify = new notifications_uc();
+            notify.Dock = DockStyle.Fill;
+
+            main_tablepanel.Controls.Add(notify);
         }
 
-        // centre uc customizations
+        private void customers_btn_Click_1(object sender, EventArgs e)
+        {
+            center_uc center = addCentre_uc();
+            AddButtonsToDropdownPanel(center, "View Customer Types", "Add Customer Type", "View Customers", "Add Customer");
+        }
+        private void products_btn_Click(object sender, EventArgs e)
+        {
+           
+        }
+        
+        private void products_btn_Click_1(object sender, EventArgs e)
+        {
+            RemoveAllControlsFromOuterPanel(main_tablepanel);
+
+            center_uc center = new center_uc();
+            center.Dock = DockStyle.Fill;
+
+            main_tablepanel.Controls.Add(center);
+
+            addButtonsForProduct(center, "Discard Product", "Product Details", "Add Product Type", "Add Company", "Add Supplier", "Add Product");
+        }
+
+        /////////////////////////////// centre uc customizations ///////////////////////////////
         private center_uc addCentre_uc()
         {
             RemoveAllControlsFromOuterPanel(main_tablepanel);
@@ -128,10 +158,10 @@ namespace SalonManagementSystem
             }
         }
 
-        private void ShowEmployeeDetailsPage(center_uc center)
-        {
-            RemoveAllControlsFromOuterPanel(center.OuterTablePanel);
-
+        ////////////////////////////// Functions  to add the ui of inner buttons //////////////////////////////
+        private void ShowEmployeeDetailsPage(center_uc center)                                               
+        {                                                                                                    
+            RemoveAllControlsFromOuterPanel(center.OuterTablePanel);                                                                          
             // Create and add employees_uc to the first row of outer_panel
             employees_uc employeesUC = new employees_uc();
             employeesUC.Dock = DockStyle.Fill;
@@ -182,25 +212,6 @@ namespace SalonManagementSystem
             viewCustomerType_uc vc = new viewCustomerType_uc();
             vc.Dock = DockStyle.Fill;
             center.OuterTablePanel.Controls.Add(vc, 0, 1);
-        }
-        private void notifications_btn_Click(object sender, EventArgs e)
-        {
-            RemoveAllControlsFromOuterPanel(main_tablepanel);
-            notifications_uc notify = new notifications_uc();
-            notify.Dock = DockStyle.Fill;
-
-            main_tablepanel.Controls.Add(notify);
-        }
-
-        private void customers_btn_Click_1(object sender, EventArgs e)
-        {
-            center_uc center = addCentre_uc();
-            AddButtonsToDropdownPanel(center, "View Customer Types", "Add Customer Type", "View Customers", "Add Customer");
-        }
-        /* Product section*/
-        private void products_btn_Click(object sender, EventArgs e)
-        {
-           
         }
         private void addButtonsForProduct(center_uc center, params string[] buttonLabels)
         {
@@ -308,23 +319,9 @@ namespace SalonManagementSystem
             editProduct employeesUC = new editProduct();
             employeesUC.Dock = DockStyle.Fill;
             center.OuterTablePanel.Controls.Add(employeesUC, 0, 1);
-
         }
+
        
 
-        private void products_btn_Click_1(object sender, EventArgs e)
-        {
-            RemoveAllControlsFromOuterPanel(main_tablepanel);
-
-            center_uc center = new center_uc();
-            center.Dock = DockStyle.Fill;
-
-            main_tablepanel.Controls.Add(center);
-
-            addButtonsForProduct(center, "Discard Product", "Product Details", "Add Product Type", "Add Company", "Add Supplier", "Add Product");
-
-
-
-        }
     }
 }
