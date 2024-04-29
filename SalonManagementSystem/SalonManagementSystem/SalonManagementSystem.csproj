@@ -59,6 +59,12 @@
     <Compile Include="UI\addCompany.Designer.cs">
       <DependentUpon>addCompany.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\addcustomerType_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\addcustomerType_uc.Designer.cs">
+      <DependentUpon>addcustomerType_uc.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\addEmp_uc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +139,21 @@
     <Compile Include="UI\services_uc.Designer.cs">
       <DependentUpon>services_uc.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\viewCustomerType_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\viewCustomerType_uc.Designer.cs">
+      <DependentUpon>viewCustomerType_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\viewCustomer_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\viewCustomer_uc.Designer.cs">
+      <DependentUpon>viewCustomer_uc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\addcustomerType_uc.resx">
+      <DependentUpon>addcustomerType_uc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\addEmp_uc.resx">
       <DependentUpon>addEmp_uc.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\services_uc.resx">
       <DependentUpon>services_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\viewCustomerType_uc.resx">
+      <DependentUpon>viewCustomerType_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\viewCustomer_uc.resx">
+      <DependentUpon>viewCustomer_uc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

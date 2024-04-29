@@ -17,8 +17,7 @@ namespace SalonManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginScreen loginScreen = new LoginScreen();
-            Application.Run(loginScreen);
+            Application.Run(new Form1());
         }
     }
 }
