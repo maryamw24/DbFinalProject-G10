@@ -38,17 +38,26 @@ namespace SalonManagementSystem.UI
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            retrunProduct f1 = new retrunProduct();
-            popupForm f = new popupForm();
-            Panel p = f1.GetMainPanel();
-            f.Add(f1, p);
-            f.Show();
+            try
+            {
+
+                // Create the returnProduct form and show it
+                retrunProduct f1 = new retrunProduct();
+                popupForm f = new popupForm();
+                Panel p = f1.GetMainPanel();
+                f.Add(f1, p);
+                f.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Action f = new Action();
+            f.Hide();
             MessageBox.Show("one");
             /*discardProduct f1 = new discardProduct();
             popupForm f = new popupForm();

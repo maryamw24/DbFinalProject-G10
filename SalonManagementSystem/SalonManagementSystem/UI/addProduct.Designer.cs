@@ -157,6 +157,7 @@
             this.supplier.Size = new System.Drawing.Size(288, 45);
             this.supplier.TabIndex = 34;
             this.supplier.Text = "Add New Supplier";
+            this.supplier.Click += new System.EventHandler(this.supplier_Click);
             // 
             // gender_cb
             // 
@@ -193,6 +194,7 @@
             this.company.Size = new System.Drawing.Size(288, 45);
             this.company.TabIndex = 33;
             this.company.Text = "Add New Company";
+            this.company.Click += new System.EventHandler(this.company_Click_1);
             // 
             // guna2ComboBox1
             // 
@@ -229,6 +231,7 @@
             this.producttype.Size = new System.Drawing.Size(318, 44);
             this.producttype.TabIndex = 32;
             this.producttype.Text = "Add New Product Type";
+            this.producttype.Click += new System.EventHandler(this.producttype_Click_1);
             // 
             // tableLayoutPanel2
             // 

@@ -53,18 +53,26 @@ namespace SalonManagementSystem.UI
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            addSupplier f1 = new addSupplier();
-            popupForm f = new popupForm();
-            Panel p = f1.GetMainPanel();
-            f.Add(f1, p);
-            f.Show();
+
 
 
         }
 
         private void company_Click(object sender, EventArgs e)
         {
-            addCompany f1 = new addCompany();
+ 
+
+        }
+
+        private void producttype_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void supplier_Click(object sender, EventArgs e)
+        {
+            addSupplier f1 = new addSupplier();
             popupForm f = new popupForm();
             Panel p = f1.GetMainPanel();
             f.Add(f1, p);
@@ -72,7 +80,16 @@ namespace SalonManagementSystem.UI
 
         }
 
-        private void producttype_Click(object sender, EventArgs e)
+        private void company_Click_1(object sender, EventArgs e)
+        {
+            addCompany f1 = new addCompany();
+            popupForm f = new popupForm();
+            Panel p = f1.GetMainPanel();
+            f.Add(f1, p);
+            f.Show();
+        }
+
+        private void producttype_Click_1(object sender, EventArgs e)
         {
             addPoductType f1 = new addPoductType();
             popupForm f = new popupForm();

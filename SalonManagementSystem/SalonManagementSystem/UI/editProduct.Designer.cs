@@ -34,6 +34,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.emp_gv = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -42,9 +45,6 @@
             this.name_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.emp = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.emp_gv)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -114,6 +114,46 @@
             this.emp_gv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.emp_gv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.emp_gv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.emp_gv_CellContentClick);
+            // 
+            // Update
+            // 
+            this.Update.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Update.FillWeight = 192.5134F;
+            this.Update.HeaderText = "Update";
+            this.Update.MinimumWidth = 7;
+            this.Update.Name = "Update";
+            this.Update.ReadOnly = true;
+            this.Update.Text = "Select";
+            this.Update.UseColumnTextForButtonValue = true;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tw Cen MT Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Delete.FillWeight = 7.486633F;
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 7;
+            this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            // 
+            // Action
+            // 
+            this.Action.HeaderText = "Action";
+            this.Action.MinimumWidth = 8;
+            this.Action.Name = "Action";
+            this.Action.ReadOnly = true;
             // 
             // guna2Panel1
             // 
@@ -263,46 +303,6 @@
             this.emp.TabIndex = 1;
             this.emp.Text = "Product Details";
             this.emp.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Update
-            // 
-            this.Update.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.FillWeight = 192.5134F;
-            this.Update.HeaderText = "Update";
-            this.Update.MinimumWidth = 7;
-            this.Update.Name = "Update";
-            this.Update.ReadOnly = true;
-            this.Update.Text = "Select";
-            this.Update.UseColumnTextForButtonValue = true;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tw Cen MT Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Delete.FillWeight = 7.486633F;
-            this.Delete.HeaderText = "Delete";
-            this.Delete.MinimumWidth = 7;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            // 
-            // Action
-            // 
-            this.Action.HeaderText = "Action";
-            this.Action.MinimumWidth = 8;
-            this.Action.Name = "Action";
-            this.Action.ReadOnly = true;
             // 
             // editProduct
             // 
