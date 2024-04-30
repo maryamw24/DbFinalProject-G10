@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbConfiguration\Configuration.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="UI\Action.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -263,7 +265,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DL\" />
-    <Folder Include="Models\" />
     <Folder Include="Utilities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
